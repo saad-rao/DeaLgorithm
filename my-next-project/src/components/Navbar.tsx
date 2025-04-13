@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BsFillCaretDownFill } from "react-icons/bs";
+
 const Navbar = () => {
   return (
     <nav className="flex flex-col w-full bg-black">
@@ -345,7 +345,7 @@ const Navbar = () => {
             <p className="text-black text-sm font-medium text-center mb-4">
               Business Description
             </p>
-            <img
+            <Image
               src="/images/project-management.png"
               alt="Business Description"
               width={50}
