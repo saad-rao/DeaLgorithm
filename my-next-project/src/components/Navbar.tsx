@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
+import { BsFillCaretDownFill } from "react-icons/bs";
 const Navbar = () => {
   return (
     <nav className="flex flex-col w-full bg-black">
       {/* Top navbar section */}
-      <div className="flex justify-between items-center px-6 py-2">
+      <div className="flex justify-between items-center px-6 py-2 ">
         {/* Left logo */}
         <div className="flex-shrink-0">
           <Image
@@ -18,23 +20,23 @@ const Navbar = () => {
 
         {/* Center navigation */}
         <div className="hidden md:block">
-          <ul className="flex space-x-8">
+          <ul className="flex space-x-10">
             <li className="px-4 py-1 bg-white text-black rounded text-[22px]">
               <Link href="/" className="font-medium">
                 Companies
               </Link>
             </li>
-            <li className="px-4 py-1 text-[#FFFFFF] text-[22px] rounded">
+            <li className="px-4 py-1 text-[#D2D2D2] text-[22px] rounded">
               <Link href="/" className="font-medium">
                 Deals
               </Link>
             </li>
-            <li className="px-4 py-1 text-[#FFFFFF] text-[22px] rounded">
+            <li className="px-4 py-1 text-[#D2D2D2] text-[22px] rounded">
               <Link href="/" className="font-medium">
                 Limited Partners
               </Link>
             </li>
-            <li className="px-4 py-1 text-[#FFFFFF] text-[22px] rounded">
+            <li className="px-4 py-1 text-[#D2D2D2] text-[22px] rounded">
               <Link href="/" className="font-medium">
                 Support
               </Link>
@@ -55,13 +57,13 @@ const Navbar = () => {
       </div>
 
       {/* Border line */}
-      <div className="border-t border-gray-700"></div>
+      <div className="border-t border-[#D2D2D2]"></div>
 
       {/* Bottom section - revised layout */}
       <div className="flex items-center px-6 py-3">
         {/* Company Screening on left */}
         <div className="w-1/4 text-left pl-4">
-          <h4 className="text-[#FFFFFF] text-[22px]">Company Screening</h4>
+          <h4 className="text-[#D2D2D2] text-[22px]">Company Screening</h4>
         </div>
 
         {/* Chat ExM and Sequoia in center */}
@@ -88,7 +90,7 @@ const Navbar = () => {
       </div>
 
       {/* Border line */}
-      <div className="border-t border-gray-700"></div>
+      <div className="border-t border-[#D2D2D2]"></div>
 
       <div className="relative w-full bg-black text-white overflow-hidden">
         {/* Background image on the right - positioned absolutely */}
@@ -106,9 +108,9 @@ const Navbar = () => {
         </div>
 
         {/* Content container - limited width to avoid overlapping with background */}
-        <div className="relative z-10 px-6 py-4 max-w-[60%] md:max-w-[65%] lg:max-w-[70%]">
+        <div className="relative z-10 px-6 py-4 mb-4 ml-14 max-w-[60%] md:max-w-[65%] lg:max-w-[70%]">
           {/* Criteria heading */}
-          <p className="text-[16px] text-[#D2D2D2] font-bold mb-6 pl-4">
+          <p className="text-[16px] text-[#D2D2D2] font-bold mb-8 mt-8 pl-4">
             CRITERIA
           </p>
 
@@ -131,22 +133,33 @@ const Navbar = () => {
               </div>
 
               {/* Down Arrow */}
-              <div className="ml-1">
+              <div className="pl-5">
                 <Image
                   src="/images/mdi_arrow-up-thin (1).png"
                   alt="down-arrow"
+                  width={10}
+                  height={3}
                   className="w-5 h-5"
+
                 />
               </div>
 
               {/* Text */}
-              <p className="text-[14px] text-[#D2D2D2] pl-16">
+              <p className="text-[14px] text-[#D2D2D2] pl-24">
                 Industry Classification In (Primary) Real Estate;Health Care
               </p>
             </div>
 
             {/* Digits with Cross Icon */}
             <div className="flex items-center space-x-2">
+              <Image
+              src="/images/mini-arrow.PNG"
+              alt="left-arrow"
+              width={25}
+              height={10}
+              objectFit="contain"
+            
+              />
               <p className="text-[15px] text-[#D2D2D2] ">250,000</p>
               <span className="text-sm text-[#D2D2D2] ">✕</span>
             </div>
@@ -173,26 +186,34 @@ const Navbar = () => {
               </div>
 
               {/* Up and Down Arrows */}
-              <div className="flex items-center space-x-1">
-                <Image
-                  src="/images/mdi_arrow-up-thin (2).png"
+              <div className="pl-5">
+                 <Image
+                  src="/images/updown-arrow.PNG"
                   alt="up-arrow"
+                  width={10}
+                  height={3}
                   className="w-5 h-5"
                 />
-                <Image
+                {/* <Image
                   src="/images/mdi_arrow-up-thin (1).png"
                   alt="down-arrow"
+                  width={10}
+                  height={3}
                   className="w-5 h-5"
-                />
+                />  */}
               </div>
 
               {/* "And" Text */}
-              <p className="text-[14px] text-[#D2D2D2] ml-3">And</p>
+              <p className="text-[14px] text-[#D2D2D2] ml-3 pl-5">And
+                
+              </p>
 
               {/* Main Text */}
-              <p className="text-[14px] text-[#D2D2D2] ml-1">
+              <p className="text-[14px] text-[#D2D2D2] ml-1 pl-5">
+           
                 Geography In United States and Canada
               </p>
+            
             </div>
 
             {/* Digits with Cross Icon */}
@@ -218,10 +239,12 @@ const Navbar = () => {
               </div>
 
               {/* Up Arrow */}
-              <div>
+              <div className="pl-5">
                 <Image
                   src="/images/mdi_arrow-up-thin (2).png"
                   alt="up-arrow"
+                  width={10}
+                  height={3}
                   className="w-5 h-5"
                 />
               </div>
@@ -231,7 +254,7 @@ const Navbar = () => {
                 {/* Placeholder for the icon (since it's not provided, using a small square as a placeholder) */}
                 <div className="w-4 h-4"></div>
                 <p className="text-[14px] text-[#D2D2D2] pl-1 ">And</p>
-                <p className="text-[14px] text-[#D2D2D2] pl-5">
+                <p className="text-[14px] text-[#D2D2D2] pl-7">
                   Company Type In Public Company
                 </p>
               </div>
@@ -293,7 +316,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* Final border line */}
-      <div className="border-b border-gray-700 my-1 "></div>
+      <div className="border-b border-[#D2D2D2]   "></div>
 
       <div className="bg-black p-4">
         {/* Header */}
@@ -311,6 +334,8 @@ const Navbar = () => {
             <Image
               src="/images/options_1053833 1 (1).png"
               alt="Sectors and Industries"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -323,6 +348,8 @@ const Navbar = () => {
             <img
               src="/images/project-management.png"
               alt="Business Description"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -335,6 +362,8 @@ const Navbar = () => {
             <Image
               src="/images/vaadin_globe.png"
               alt="Locations"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -347,6 +376,8 @@ const Navbar = () => {
             <Image
               src="/images/pie-chart.png"
               alt="Business Cycles and Backing Status"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -359,6 +390,8 @@ const Navbar = () => {
             <Image
               src="/images/partnership.png"
               alt="Deals and Investors"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -371,6 +404,8 @@ const Navbar = () => {
             <Image
               src="/images/indicators.png"
               alt="Financial Metrics"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
@@ -383,6 +418,8 @@ const Navbar = () => {
             <Image
               src="/images/keyhole.png"
               alt="Intellectual Property"
+              width={50}
+              height={10}
               className="w-12 h-12"
             />
           </div>
