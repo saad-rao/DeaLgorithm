@@ -161,7 +161,7 @@ const Navbar = () => {
             
               />
               <p className="text-[15px] text-[#D2D2D2] ">250,000</p>
-              <span className="text-sm text-[#D2D2D2] ">✕</span>
+              <span className="text-white font-bold ">✕</span>
             </div>
           </div>
 
@@ -232,7 +232,7 @@ const Navbar = () => {
             {/* Digits with Cross Icon */}
             <div className="flex items-center space-x-2">
               <p className="text-[15px] text-[#D2D2D2] ">214,712</p>
-              <span className="text-sm">✕</span>
+              <span className="text-white font-bold">✕</span>
             </div>
           </div>
 
@@ -285,7 +285,7 @@ const Navbar = () => {
             {/* Digits with Cross Icon */}
             <div className="flex items-center space-x-2">
               <p className="text-[15px] text-[#D2D2D2] ">3,609</p>
-              <span className="text-sm text-[#D2D2D2]">✕</span>
+              <span className="text-white font-bold">✕</span>
             </div>
           </div>
 
