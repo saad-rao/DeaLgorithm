@@ -97,10 +97,10 @@ const Navbar = () => {
         <div className="absolute right-0 top-0 h-full w-1/3 z-0">
           <div className="relative w-full h-full">
             <Image
-              src="/images/hero-sec-mask- group.png"
+              src="/images/Mask group 1.png"
               alt="Background"
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               objectPosition="center right"
               className="opacity-70"
             />
@@ -170,7 +170,7 @@ const Navbar = () => {
 
           {/* Criteria Item 2 */}
           <div className="bg-black text-white flex items-center justify-between p-2 w-full">
-            <div className="flex items-center space-x-5">
+            <div className="flex items-center space-x-5 ">
               {/* Number 2 */}
               <p className="text-[12px] text-[#919191] font-medium">2</p>
 
@@ -204,15 +204,28 @@ const Navbar = () => {
               </div>
 
               {/* "And" Text */}
-              <p className="text-[14px] text-[#D2D2D2] ml-3 pl-5">And
+              <p className="text-[14px] text-[#D2D2D2] ml-3 pl-4">And
                 
               </p>
 
               {/* Main Text */}
-              <p className="text-[14px] text-[#D2D2D2] ml-1 pl-5">
+              <div className="pl-3">         
+                     <Image
+                     src="/images/down-icon.png"
+                      alt="down-arrow"
+                      width={15}
+                      height={5}
+                      
+                     />
+
+                     </div>
+<div className="">
+              <p className="text-[14px] text-[#D2D2D2] pr-5">
            
                 Geography In United States and Canada
               </p>
+
+              </div>
             
             </div>
 
@@ -253,8 +266,17 @@ const Navbar = () => {
               <div className="flex items-center space-x-1">
                 {/* Placeholder for the icon (since it's not provided, using a small square as a placeholder) */}
                 <div className="w-4 h-4"></div>
-                <p className="text-[14px] text-[#D2D2D2] pl-1 ">And</p>
-                <p className="text-[14px] text-[#D2D2D2] pl-7">
+                <p className="text-[14px] text-[#D2D2D2]  ">And</p>
+                <div className="pl-7">         
+                     <Image
+                     src="/images/down-icon.png"
+                      alt="down-arrow"
+                      width={15}
+                      height={5}
+                     />
+
+                     </div>
+                <p className="text-[14px] text-[#D2D2D2] pr-6">
                   Company Type In Public Company
                 </p>
               </div>
@@ -284,7 +306,7 @@ const Navbar = () => {
                   <input
                     type="text"
                     placeholder="Add Search Criteria or Add Keywords"
-                    className="w-full bg-transparent border-b border-gray-700 text-gray-400 text-sm py-2 focus:outline-none ml-7"
+                    className="w-full bg-transparent border-b border-gray-700 text-gray-400 text-sm py-2 focus:outline-none "
                   />
 
                   {/* Search icon positioned absolute to the right */}
@@ -300,7 +322,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Add button */}
-                <button className="bg-[#3D3D3D] text-[10px] text-white px-4 py-2 rounded-[7px] uppercase ">
+                <button className="bg-[#3D3D3D] text-[10px] text-white px-4 py-2 rounded-[7px] uppercase mt-3 ">
                   ADD
                 </button>
               </div>
@@ -314,39 +336,41 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+     
+
+
       {/* Final border line */}
-      <div className="border-b border-[#D2D2D2]   "></div>
+      {/* <div className="border-b border-[#D2D2D2]   "></div> */}
 
       <div className="bg-black p-4">
         {/* Header */}
-        <h2 className="text-[#D2D2D2] text-[24px] font-semibold mb-4">
+        <h2 className="text-[#D2D2D2] text-[24px] font-semibold mb-10">
           Explore Company Criteria Below
         </h2>
 
         {/* Cards Container */}
         <div className="flex space-x-14 justify-center overflow-x-auto">
           {/* Card 1: Sectors and Industries */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Sectors and Industries
             </p>
             <Image
-              src="/images/options_1053833 1 (1).png"
+              src="/images/card-1-pic.png"
               alt="Sectors and Industries"
               width={50}
               height={10}
-              className="w-12 h-12"
+              className="w-12 h-12 text-white"
             />
           </div>
 
           {/* Card 2: Business Description */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Business Description
             </p>
             <Image
-              src="/images/project-management.png"
+              src="/images/card-2-pic.png"
               alt="Business Description"
               width={50}
               height={10}
@@ -355,12 +379,12 @@ const Navbar = () => {
           </div>
 
           {/* Card 3: Locations */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Locations
             </p>
             <Image
-              src="/images/vaadin_globe.png"
+              src="/images/card-3-pic.png"
               alt="Locations"
               width={50}
               height={10}
@@ -369,12 +393,12 @@ const Navbar = () => {
           </div>
 
           {/* Card 4: Business Cycles and Backing Status */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Business Cycles and <br></br> Backing Status
             </p>
             <Image
-              src="/images/pie-chart.png"
+              src="/images/card-4-pic.png"
               alt="Business Cycles and Backing Status"
               width={50}
               height={10}
@@ -383,12 +407,12 @@ const Navbar = () => {
           </div>
 
           {/* Card 5: Deals and Investors */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Deals and Investors
             </p>
             <Image
-              src="/images/partnership.png"
+              src="/images/card-5-pic.png"
               alt="Deals and Investors"
               width={50}
               height={10}
@@ -397,12 +421,12 @@ const Navbar = () => {
           </div>
 
           {/* Card 6: Financial Metrics */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Financial Metrics
             </p>
             <Image
-              src="/images/indicators.png"
+              src="/images/card-6-pic.png"
               alt="Financial Metrics"
               width={50}
               height={10}
@@ -411,12 +435,12 @@ const Navbar = () => {
           </div>
 
           {/* Card 7: Intellectual Property */}
-          <div className="bg-white rounded-[30px] w-32 h-44 flex flex-col items-center justify-center p-4">
-            <p className="text-black text-sm font-medium text-center mb-4">
+          <div className="bg-[#3D3D3D] rounded-[25px] w-32 h-44 flex flex-col items-center justify-center p-4">
+            <p className="text-white text-sm font-medium text-center mb-4">
               Intellectual Property
             </p>
             <Image
-              src="/images/keyhole.png"
+              src="/images/card-7-pic.png"
               alt="Intellectual Property"
               width={50}
               height={10}
@@ -424,6 +448,7 @@ const Navbar = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     </nav>
   );
